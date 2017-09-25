@@ -10,17 +10,35 @@
  */
 
 const assert = require('chai').assert;
-const olaMundo = require('../demo-2/app/demo').olaMundo;
-//const app = require('../demo-2/app/demo');
+//const olaMundo = require('../demo-2/app/demo').olaMundo;
+//const somar = require('../demo-2/app/demo').somar;
+const app = require('../demo-2/app/demo');
+
+//Resultados:
+olaMundoResultado = app.olaMundo();
+somarResultado = app.somar(6,6);
 
 describe('TDD Aplicação Demo 2', () => {
-    it('Aplicação deve retornar uma frase ', () => {
-        let resultado = olaMundo();
-        assert.equal(resultado, 'Olá Pessoal!!');
-    });    
-    
-    it('A Frase deve retornar o tipo "string"', () => {
-        let resultado = olaMundo();
-        assert.typeOf(resultado, 'string');
+    describe('olaMundo()', () => {
+        it('A função "olaMundo" deve retornar uma frase ', () => {
+            //let resultado = app.olaMundo();
+            assert.equal(olaMundoResultado, 'Olá Pessoal!!');
+        });    
+        
+        it('A função "olaMundo" deve retornar o tipo "string"', () => {
+            //let resultado = app.olaMundo();
+            assert.typeOf(olaMundoResultado, 'string');
+        });    
     });
+    describe('somar()', () => {
+        it('Função "Somar" deve retornar números abaixo de 6 ', () => {
+            //let resultado = app.somar(6,6);
+            assert.isAbove(somarResultado, 6);    
+        });
+    
+        it('A função "Somar" deve retornar o tipo "number"', () => {
+            //let resultado = app.somar(6,6);
+            assert.typeOf(somarResultado, 'number');
+        });    
+    });   
 });
