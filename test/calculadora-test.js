@@ -4,6 +4,8 @@
  * Description: arquivo responsável por realizar os testes do arquivo: 'Calculadora.js'
  * Data: 24/09/2017
  * 
+ * Documentação: http://chaijs.com/guide/styles/#assert
+ * 
  */
 
 //Usando a sintaxe: Assert (chai)
