@@ -8,3 +8,13 @@
  *               http://chaijs.com/guide/styles/
  * 
  */
+
+const assert = require('chai').assert;
+const app = require('../demo-2/app/demo');
+
+//Segundo Teste:
+describe('TDD Aplicação Demo 2', () => {
+    it('Aplicação deve retornar frase ', () => {
+        assert.equal(app(), 'oi');
+    });    
+});
