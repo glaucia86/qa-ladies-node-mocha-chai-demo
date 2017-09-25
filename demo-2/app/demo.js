@@ -7,6 +7,8 @@
  * 
  */
 
-module.exports = function() {
-    return 'oi';
+module.exports = {
+    olaMundo: function() {
+        return 'Olá Pessoal!!'    
+    }
 }
