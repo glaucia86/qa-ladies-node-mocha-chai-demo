@@ -1,0 +1,23 @@
+{
+  "name": "qa-ladies",
+  "version": "1.0.0",
+  "description": "Demos da palestra \"Introdução à TDD em Node.Js + Mocha + Chai\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glaucia86/qa-ladies-node-mocha-chai-demo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glaucia86/qa-ladies-node-mocha-chai-demo/issues"
+  },
+  "homepage": "https://github.com/glaucia86/qa-ladies-node-mocha-chai-demo#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3"
+  }
+}
