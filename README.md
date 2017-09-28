@@ -19,7 +19,7 @@ Antes de instalar as dependências no projeto, você precisa já ter instalado n
 * **Mocha.Js & Chai.Js**: após ter instalado o node na sua máquina, basta abrir o terminal na sua máquina e digitar o seguinte comando:
 
 ```
-npm install -g mocha chai
+npm install -g mocha
 ```
 
 Ao digitar esse comando, irá instalar de maneira global o 'Mocha' e 'Chai'
